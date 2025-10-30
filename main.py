@@ -41,7 +41,7 @@ async def lifespan(app: FastAPI):
         # ✨ 2. 모델을 한 번만 초기화합니다.
         MODEL = genai.GenerativeModel(MODEL_NAME)
         
-        reference_dir = Path(__file__).resolve().parent / "reference_images"
+        reference_dir = Path(__file__).resolve().parent / "reference_image"
         print("🤖 참조 이미지들의 임베딩 벡터를 생성합니다...")
         
         for item_dir in reference_dir.iterdir():
