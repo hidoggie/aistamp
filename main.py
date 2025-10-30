@@ -47,7 +47,7 @@ async def lifespan(app: FastAPI):
         for item_dir in reference_dir.iterdir():
             if item_dir.is_dir():
                 item_name = item_dir.name
-                for image_path in item_dir.glob("*.png"): # .png, .jpg 등 확장자 지원
+                for image_path in item_dir.glob("*.jpg"): # .png, .jpg 등 확장자 지원
                     print(f"  - {item_name} / {image_path.name} 지문 추출 중...")
                     img = Image.open(image_path)
                     # ✨ 3. AI에게 이미지 1장을 보내 '이미지 벡터'를 요청합니다.
