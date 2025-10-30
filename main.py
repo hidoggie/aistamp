@@ -14,7 +14,7 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 GOOGLE_CREDENTIALS_PATH = "/etc/secrets/google-credentials.json"
 
 # ✨ 1. 임베딩(지문 추출)과 응답 생성 모두 동일한 최신 모델을 사용합니다.
-MODEL_NAME = "gemini-1.5-pro-flash"
+MODEL_NAME = "gemini-1.5-flash"
 
 # --- 2. 전역 변수 ---
 app: FastAPI
